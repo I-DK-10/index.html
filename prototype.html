@@ -14,14 +14,39 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <section>
+    
+    <section id="fitness-options">
         <h2>Fitness Options</h2>
-        <ul>
-            <li>Personalized Workout Plans</li>
-            <li>Meal Planning and Nutrition</li>
-            <li>Live Coaching Sessions</li>
-            <li>Progressive Fitness Tracker</li>
+        <ul id="fitness-list">
+            <!-- Fitness options will be dynamically added here -->
         </ul>
     </section>
+
+    <!-- Inline JavaScript -->
+    <script>
+        // This code will run as soon as the DOM is fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Define an array of fitness options to display
+            const fitnessOptions = [
+                'Personalized Workout Plans',
+                'Meal Planning and Nutrition',
+                'Live Coaching Sessions',
+                'Progressive Fitness Tracker'
+            ];
+
+            // Get the list container element where the fitness options will be added
+            const fitnessList = document.getElementById('fitness-list');
+
+            // Loop through the fitness options and create a new list item for each
+            fitnessOptions.forEach(option => {
+                // Create a new <li> element
+                const listItem = document.createElement('li');
+                // Set the text of the <li> element to the current option
+                listItem.textContent = option;
+                // Append the <li> to the list container (<ul>)
+                fitnessList.appendChild(listItem);
+            });
+        });
+    </script>
 </body>
 </html>
