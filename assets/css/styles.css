@@ -1,30 +1,57 @@
+/* Apply a soft blue gradient background to the whole page */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background: linear-gradient(to bottom, #4e73df, #2c3e50); /* Blue gradient */
+    color: #fff; /* White text color for better contrast */
 }
 
+/* Style the header with a darker blue background */
 header {
-    background-color: #333;
+    background-color: #1f2a44; /* Darker blue for the header */
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0; /* Increased padding for better space */
+    border-bottom: 3px solid #4e73df; /* Light blue bottom border */
 }
 
+/* Style the navigation links */
 nav a {
     color: #fff;
-    margin: 0 15px;
+    margin: 0 20px;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth hover transition */
 }
 
+nav a:hover {
+    color: #4e73df; /* Change to lighter blue on hover */
+}
+
+/* Style the main section */
 section {
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Light transparent white background */
+    border-radius: 8px;
+    margin-top: 20px;
 }
 
+/* Style the images */
 img {
     max-width: 80%;
     height: auto;
+    margin-top: 20px;
+    border-radius: 8px; /* Rounded corners for the images */
+}
+
+/* Add a footer for completeness (optional) */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #1f2a44;
+    color: #fff;
     margin-top: 20px;
 }
